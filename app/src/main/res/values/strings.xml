@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">IRIS integrate Quickstart</string>
+    <string name="iris_integrate_version">IRIS integrate version: %1$s</string>
+
+    <!--General-->
+    <string name="done">Done</string>
+
+    <!--StartView-->
+    <string name="start_scan">Start scan</string>
+
+    <!--InferenceView-->
+    <string name="hold_on">Hold on</string>
+    <string name="waiting_for_inference_result">Waiting for inference result…</string>
+
+    <!--ResultView-->
+    <string name="result">Result</string>
+    <string name="scan_result_is_positive">The scan result is positive.</string>
+    <string name="scan_result_is_negative">The scan result is negative.</string>
+
+    <!--ErrorView-->
+    <string name="error">Error</string>
+
+    <!--Readable error messages-->
+    <string name="error_alignment_nofacetracked">Face tracking lost.</string>
+    <string name="error_alignment_notcentered">You were not centered well enough.</string>
+    <string name="error_alignment_notfollowingdot">You didn\'t focus on the dot well enough.</string>
+    <string name="error_alignment_notstraight">Your head posture was not straight enough.</string>
+    <string name="error_alignment_tooclose">You were too close to the phone.</string>
+    <string name="error_alignment_toofaraway">You were too far away from the phone.</string>
+    <string name="error_deviceperformance_body">Scan was interrupted because the phone is not able to deliver enough performance.</string>
+    <string name="error_deviceperformance_title">Scan aborted</string>
+    <string name="error_generic_body">Scan failed, please try again.</string>
+    <string name="error_generic_title">Scan failed</string>
+    <string name="error_interrupted_body">Scan was interrupted or the app is not in full screen mode. Please try again.</string>
+    <string name="error_interrupted_title">Scan aborted</string>
+    <string name="error_nocamera_body">Permission to use the camera was denied.\n\nTo be able to use the app, please allow camera access via the Settings app.</string>
+    <string name="error_nocamera_title">No camera</string>
+    <string name="error_nonetwork_body">The phone has no network connection.</string>
+    <string name="error_nonetwork_title">No network</string>
+    <string name="error_timedout_body">The time limit for successfully starting a scan was reached. Please try again.</string>
+    <string name="error_timedout_title">Alignment failed</string>
+    <string name="error_unexpected_body">An unexpected error occurred:</string>
+    <string name="error_unexpected_title">Scan failed</string>
+    <string name="error_unsupporteddevice_body">This phone model is not supported.</string>
+    <string name="error_unsupporteddevice_title">Unsupported device</string>
+
+</resources>
