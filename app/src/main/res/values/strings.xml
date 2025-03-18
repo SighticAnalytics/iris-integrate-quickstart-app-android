@@ -44,4 +44,13 @@
     <string name="error_unsupporteddevice_body">This phone model is not supported.</string>
     <string name="error_unsupporteddevice_title">Unsupported device</string>
 
+    <!-- Readable status messages -->
+    <string name="device_supported">Supported</string>
+    <string name="device_unsupported_title">Device not supported</string>
+    <string name="device_unsupported_body">This device does not fulfill the required specifications to run IRIS integrate.</string>
+    <string name="device_unsupported_library_version">This version of the IRISintegrate library is not supported.</string>
+    <string name="device_unsupported_hardware">Hardware is not supported</string>
+    <string name="device_unsupported_google_play_missing">Google Play services is not available on the device.</string>
+    <string name="device_unsupported_tensorflow_is_not_supported">Tensorflow provided by Google Play services is not available on the device.</string>
+
 </resources>

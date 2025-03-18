@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.sightic.irisintegrate.error.AlignmentError
 import com.sightic.irisintegratequickstart.extensions.asReadableError
+import com.sightic.irisintegratequickstart.extensions.asReadableStatus
 import com.sightic.irisintegratequickstart.ui.theme.IRISIntegrateQuickstartTheme
 import com.sightic.irisintegratequickstart.viewmodel.Action
 import com.sightic.irisintegratequickstart.viewmodel.Screen
@@ -19,6 +20,8 @@ fun ContentView(
         is Screen.Inference -> InferenceView()
         is Screen.Result -> ResultView(screen.hasImpairment, onAction)
         is Screen.Error -> ErrorView(screen.error.asReadableError(), onAction)
+        is Screen.DeviceUnsupported -> DeviceUnsupportedView(screen.status.asReadableStatus())
+        Screen.Loading -> LoadingView()
     }
 
 }
