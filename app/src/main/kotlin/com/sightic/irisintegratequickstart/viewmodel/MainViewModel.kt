@@ -36,7 +36,7 @@ class MainViewModel : ViewModel() {
     fun onAction(action: Action) {
         when (action) {
             is Action.OnDeviceSupportedStatusReceived -> checkDeviceSupportedStatus(action.status)
-            is Action.OnResultReceived -> interfereResult(action.result)
+            is Action.OnResultReceived -> inferResult(action.result)
             is Action.OnStartScanClicked -> _screen.update { Screen.Scan }
             is Action.OnDoneClicked -> _screen.update { Screen.Start }
         }
@@ -51,7 +51,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    private fun interfereResult(result: SighticResult<SighticRecording>) {
+    private fun inferResult(result: SighticResult<SighticRecording>) {
         _screen.update { Screen.Inference }
         when (result) {
             is SighticResult.Failure -> _screen.update {
